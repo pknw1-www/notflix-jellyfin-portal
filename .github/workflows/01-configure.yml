@@ -1,0 +1,236 @@
+name: 01 - Configure
+
+on:
+  workflow_dispatch:
+    inputs:
+      folder_name:
+        description: 'folder name'
+        default: 'test-www'
+      git_files:
+        description: 'Use external folder for Git Files'
+        type: boolean
+        default: true
+      config_folder:
+        description: 'initialize a config sub-folder and repo'
+        type: boolean
+        default: true
+      docker_user:
+        description: 'docker user for creating image name'
+        default: ''
+      docker_image:
+        description: 'the output docker image name'
+        default: ''
+      docker_tag:
+        description: 'the default tag'
+        type: choice
+        default: 'latest'
+        options:
+          - latest
+          - latest_timestamp
+          - latest_timestamp_dev
+      docker_registry:
+        description: 'whther to use the dokcer registry '
+        type: boolean
+        default: true
+      privileged:
+        description: 'Run in privileged '
+        type: boolean
+        default: false
+      docker_network:
+        description: 'Docker Network'
+        type: choice
+        default: 'proxy'
+        options:
+          - proxy
+          - admin
+          - proxy_admin
+          - host
+      vhost_name:
+        description: 'URL'
+        default: '.pknw1.co.uk'
+      vhost_port:
+        description: 'Virtual Port'
+        default: '80'
+      app_type:
+        description: 'check app type'
+        type: choice
+        default: 'mobirise'
+        options:
+          - mobirise
+          - html
+          - flask
+          - 3rdParty
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - name: Get repository name
+        id: repo-name
+        uses: MariachiBear/get-repo-name-action@v1.1.0
+        with:
+          with-owner: 'false'
+          string-case: 'lowercase'
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'repo_name'
+          value: ${{ inputs.repo_name }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'folder_name'
+          value: ${{ inputs.folder_name }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'git_files'
+          value: ${{ inputs.git_files }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'config_folder'
+          value: ${{ inputs.config_folder }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'docker_user'
+          value: ${{ inputs.docker_user }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'docker_image'
+          value: ${{ inputs.docker_image }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'docker_tag'
+          value: ${{ inputs.docker_tag }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'docker_registry'
+          value: ${{ inputs.docker_registry }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'privileged'
+          value: ${{ inputs.privileged }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'docker network'
+          value: ${{ inputs.docker_network }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'vhost_name'
+          value: ${{ inputs.vhost_name }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'vhost_port'
+          value: ${{ inputs.vhost_port }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - uses: action-pack/set-variable@v1
+        with:
+          name: 'app_type'
+          value: ${{ inputs.app_type }}
+          token: ${{ secrets.GH_ORG_TOKEN }}
+
+  compose_files:
+    runs-on: ubuntu-latest
+    needs: init
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - run: |
+          echo "services:" >> docker-compose.tmp
+          cat << EOF >> docker-compose.tmp
+            ${{ vars.repo_name }}:
+              image: ${{ vars.docker_owner }}/${{ vars.docker_image}}:${{ vars.docker_tag }}
+              hostname: ${{ vars.vhost_name }}
+              container_name: ${{ vars.repo_name }}
+          EOF
+      - name: Privilged Mode
+        if: ${{ vars.privileged == true }} 
+        run: |
+          cat << EOF >> docker-compose.tmp
+              privileged: true
+          EOF
+      - name: Networks Mode Mixed
+        if: ${{ vars.network_mode == 'proxy_admin'' }} 
+        run: |
+          cat << EOF >> docker-compose.tmp
+              networks:
+                - proxy
+                - admin
+          EOF
+      - name: Networks Mode Proxy
+        if: ${{ vars.network_mode == 'proxy'' }} 
+        run: |
+          cat << EOF >> docker-compose.tmp
+              networks:
+                - proxy
+          EOF
+      - name: Networks Mode Admin
+        if: ${{ vars.network_mode == 'admin'' }} 
+        run: |
+          cat << EOF >> docker-compose.tmp
+              networks:
+                - admin
+          EOF
+      - name: volumes
+        run: |
+          cat << EOF >> docker-compose.tmp
+              volumes:
+                - /etc/localtime:/etc/localtime
+          EOF
+      - name: volumes Config
+        run: |
+          cat << EOF >> docker-compose.tmp
+                - ./config:/config
+          EOF
+      - name: Environment
+        run: |
+          cat << EOF >> docker-compose.tmp
+              environment:
+                - VIRTUAL_HOST=${{ vars.vhost_name }}
+                - VIRTUAL_PORT=${{ vars.vhost_name }}
+          EOF
+      - run: |
+          echo "networks:" >> docker-compose.tmp
+          cat << EOF >> docker-compose.tmp
+            proxy:
+              external: true
+            admin:
+              external: true
+
+          EOF
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Updated compose files
+          push_options: '--force'
+          branch: main
+
+  config_folder:
+    runs-on: ubuntu-latest
+    needs: compose_files
+    if: ${{ vars.config_folder == true }}
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_ORG_TOKEN }}
+
+

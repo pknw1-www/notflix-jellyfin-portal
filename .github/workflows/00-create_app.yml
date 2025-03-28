@@ -1,0 +1,87 @@
+name: 01 - Create Project From Template
+
+on:
+  workflow_dispatch:
+    inputs:
+      repository_org:
+        required: true
+        default: 'pknw1-www'
+      repository_name:
+        required: true
+        default: 'webservice'
+      repository_description:
+        required: true
+        default: 'description'
+      repository_type:
+        type: choice
+        required: true
+        default: 'new_development'
+        options:
+          - new_development
+          - new_www_development
+          - boilerplate_compose
+          - external_repo_source
+          - external_compose_source
+      external_repo_source:
+        default: ''
+        required: false
+      external_link:
+        default: ''
+        required: false
+      external_compose_source:
+        required: false
+      create_private_config:
+        type: boolean
+        default: true
+        required: true
+      create_repository:
+        type: boolean
+        default: true
+        required: true
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - name: summarise input variables
+        run: |
+          echo "## Summary of input variables" >> $GITHUB_STEP_SUMMARY
+          echo "repository_org : ${{ inputs.repository_org }}" >> $GITHUB_STEP_SUMMARY
+          echo "repository_name : ${{ inputs.repository_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "repository_description : ${{ inputs.repository_description }}" >> $GITHUB_STEP_SUMMARY
+          echo "repository_type : ${{ inputs.repository_type }}" >> $GITHUB_STEP_SUMMARY
+          echo "external_repo_source : ${{ inputs.external_repo_source }}" >> $GITHUB_STEP_SUMMARY
+          echo "external_link : ${{ inputs.external_link }}" >> $GITHUB_STEP_SUMMARY
+          echo "external_compose_source : ${{ inputs.external_compose_source }}" >> $GITHUB_STEP_SUMMARY
+          echo "create_private_config : ${{ inputs.create_private_config }}" >> $GITHUB_STEP_SUMMARY
+
+  zip_templates:
+    runs-on: ubuntu-latest
+    needs: summary
+    if: ${{ inputs.create_repository == true }}
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_ORG_TOKEN }}
+      - name: create updated template zip
+        run: |
+          cd deploy/templates/${{ inputs.repository_type }}
+          zip -r ../../zipFile.zip * .gitignore 
+      - name: Creating GitHub Organization Repository
+        uses: howlowck/create-repo-action@v1.0
+        with:
+          zipPath: 'deploy/zipFile.zip'
+          repoOrg: '${{ inputs.repository_org }}'
+          repoName: '${{ inputs.repository_name }}'
+          repoDescription: '${{ inputs.repository_description }} - ${{ inputs.external_repo_source }} - ${{ inputs.external_link }}'
+          repoVisibility: 'private'
+          securityToken: ${{ secrets.GH_ORG_TOKEN }}
