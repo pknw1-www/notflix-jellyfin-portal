@@ -21,7 +21,7 @@
 <link rel="stylesheet" data-href="assets/theme/css/style.css">
 <link rel="preload" data-href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" data-href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" data-href="assets/mobirise/css/mbr-additional.css?v=e0CxA3"><link rel="stylesheet" data-href="assets/mobirise/css/mbr-additional.css?v=e0CxA3" type="text/css">
+  <link rel="preload" as="style" data-href="assets/mobirise/css/mbr-additional.css?v=HrBol5"><link rel="stylesheet" data-href="assets/mobirise/css/mbr-additional.css?v=HrBol5" type="text/css">
 
   
   <style>.modal-content {
@@ -74,6 +74,22 @@ color: red;
 	</nav>
 </section>
 
+<section data-bs-version="5.1" class="header16 cid-uH57KQ6g7S mbr-fullscreen mbr-parallax-background" id="header17-2r">
+  
+  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-5">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong><br>Unlimited films, TV programmes and more... for free</strong><br><strong><br></strong></h1>
+        
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7"><strong>A free technology demonstration of Free streaming of any content<br></strong><br><br><br><br></p>
+        <div class="mbr-section-btn"><a class="btn btn-primary display-7" href="invite.html">Get Started&nbsp; &nbsp; &gt;&nbsp;&nbsp;</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="mbr-section" id="witsec-modal-window-block-0" data-rv-view="0">
 
 	<style>
@@ -89,24 +105,22 @@ color: red;
 
 	
 	
-	<div><div class="modal fade" id="Popup" tabindex="-1" role="dialog" aria-labelledby="PopupLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="Popup_body"><img data-src="https://www.pknw1.co.uk/assets/images/logo-stacked-511x282.png" width="50%"><br>
+	<div><div class="modal fade" id="PopupWelcome" tabindex="-1" role="dialog" aria-labelledby="PopupWelcomeLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="PopupWelcome_body"><img data-src="https://www.pknw1.co.uk/assets/images/logo-stacked-511x282.png" width="50%"><br>
 go to the<a href="https://jellyfin.pknw1.co.uk"> Streaming Web App</a>  or <a href="https://requests.pknw1.co.uk">requests</a><br>
 
-<strong>username : pkmovies2 </strong> <br>
-<strong>password : pknw1plex </strong> <br>
 <br>
 currently 1865 movies &amp; 4623 TV Episodes
 <br><p>
-</p></div>    </div>  </div></div><script type="text/plain"> 
+</p><div class="mbr-section-btn"><a class="btn btn-primary display-7" href="invite.html">Get Started&nbsp; &nbsp; &gt;&nbsp;&nbsp;</a></div></div>    </div>  </div></div><script type="text/plain"> 
 document.addEventListener("DOMContentLoaded", function() { 
   if(typeof jQuery === "function") {
-    $("#Popup").on("hidden.bs.modal", function () { 
-      var html = $( "#Popup_body" ).html(); 
-      $( "#Popup_body" ).empty(); 
-      $( "#Popup_body" ).append(html); 
+    $("#PopupWelcome").on("hidden.bs.modal", function () { 
+      var html = $( "#PopupWelcome_body" ).html(); 
+      $( "#PopupWelcome_body" ).empty(); 
+      $( "#PopupWelcome_body" ).append(html); 
     }) 
   } else { 
-      var mdw = document.getElementById("#Popup") 
+      var mdw = document.getElementById("#PopupWelcome") 
       mdw.addEventListener("hidden.bs.modal", function(event) { 
         mdw.innerHTML = mdw.innerHTML; 
       }); 
@@ -153,23 +167,11 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 	</script>
 
-</section>
-
-<section data-bs-version="5.1" class="header16 cid-uH57KQ6g7S mbr-fullscreen mbr-parallax-background" id="header17-2r">
-  
-  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="content-wrap col-12 col-md-5">
-        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-          <strong><br>Unlimited films, TV programmes and more... for free</strong><br><strong><br></strong></h1>
-        
-        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7"><strong>A free technology demonstration of Free streaming of any content<br></strong><br><br><br><br></p>
-        <div class="mbr-section-btn"><a class="btn btn-primary display-7" href="invite.html">Get Started&nbsp; &nbsp; &gt;&nbsp;&nbsp;</a></div>
-      </div>
-    </div>
-  </div>
-</section>
+</section><script type="text/plain">
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout( function() { OpenModal("PopupWelcome"); } , 2000);
+});
+</script>
 
 <section data-bs-version="5.1" class="header12 cid-uH584oJBv5 mbr-parallax-background" id="header12-2t">
   
