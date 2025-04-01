@@ -804,6 +804,53 @@ a {
 .cid-uFsmyfTQQR .mbr-section-subtitle {
   text-align: right;
 }
+.cid-uH4rHd5TIK {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/jellyfin-bg-1-2000x1125.png");
+}
+.cid-uH4rHd5TIK .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uH4rHd5TIK .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uH4rHd5TIK .item-wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-uH4rHd5TIK .item-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uH4rHd5TIK .content-head {
+  max-width: 800px;
+}
+.cid-uH4rHd5TIK .img-wrapper {
+  padding-right: 1.5rem;
+}
+.cid-uH4rHd5TIK .img-wrapper img {
+  width: 6rem;
+}
+.cid-uH4rHd5TIK .card-title {
+  color: #ff0000;
+}
+.cid-uH4rHd5TIK .card-text {
+  color: #ffffff;
+}
+.cid-uH4rHd5TIK .mbr-section-title {
+  color: #ffffff;
+}
+.cid-uH4rHd5TIK .mbr-section-subtitle {
+  color: #ffffff;
+}
 .cid-uGAsn9Jcd0 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -3029,6 +3076,53 @@ a {
   z-index: 10;
   background: inherit;
   box-shadow: -50px 50px 0 #ffffff, 50px -50px 0 #ffffff;
+}
+.cid-uH4hsLDbO3 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/jellyfin-bg-1-2000x1125.png");
+}
+.cid-uH4hsLDbO3 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uH4hsLDbO3 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uH4hsLDbO3 .item-wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-uH4hsLDbO3 .item-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uH4hsLDbO3 .content-head {
+  max-width: 800px;
+}
+.cid-uH4hsLDbO3 .img-wrapper {
+  padding-right: 1.5rem;
+}
+.cid-uH4hsLDbO3 .img-wrapper img {
+  width: 6rem;
+}
+.cid-uH4hsLDbO3 .card-title {
+  color: #ff0000;
+}
+.cid-uH4hsLDbO3 .card-text {
+  color: #ffffff;
+}
+.cid-uH4hsLDbO3 .mbr-section-title {
+  color: #ffffff;
+}
+.cid-uH4hsLDbO3 .mbr-section-subtitle {
+  color: #ffffff;
 }
 .cid-uGAxxNAVb4 {
   padding-top: 6rem;
