@@ -22,7 +22,7 @@
 <link rel="stylesheet" data-href="assets/theme/css/style.css">
 <link rel="preload" data-href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" data-href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" data-href="assets/mobirise/css/mbr-additional.css?v=EjsS5p"><link rel="stylesheet" data-href="assets/mobirise/css/mbr-additional.css?v=EjsS5p" type="text/css">
+  <link rel="preload" as="style" data-href="assets/mobirise/css/mbr-additional.css?v=CNdk6j"><link rel="stylesheet" data-href="assets/mobirise/css/mbr-additional.css?v=CNdk6j" type="text/css">
 
   
   <style>.modal-content {
@@ -76,8 +76,8 @@ color: #ffa600;
     <div class="container">
         <div class="media-container-row d-flex align-items-center">
             <div class="mbr-white col-12 col-lg-6 text-center text-lg-left py-5">
-                <h1 class="mbr-section-title pb-2 mbr-fonts-style display-1"><strong>Congratulations!</strong></h1>
-                <p class="mbr-text pb-4 mbr-fonts-style wrapper display-4">Your account has been created - and you can now login...<br><br> so what next?</p>
+                <h1 class="mbr-section-title pb-2 mbr-fonts-style display-1"><strong>User Created!</strong></h1>
+                <p class="mbr-text pb-4 mbr-fonts-style wrapper display-4">To get started, you can jump straight to the Web platform, or explore further and download desktop clients, iOS and Android Apps<br><br> Remember to update your user profile in Jellyfin and Requests;<br><br>If you install mobile apps, you can optionally get live updates for new uploads</p>
                 <div class="mbr-section-btn"><a class="btn btn-md btn-danger-outline display-4" href="https://jellyfin.pknw1.co.uk" target="_blank">Web</a> <a class="btn btn-md btn-danger-outline display-4" href="onboarding.html#mobile-apps">Apps</a> <a class="btn btn-md btn-danger-outline display-4" href="onboarding.html#requests">Request</a></div>
             </div>
             <div class="col-8 col-lg-5 mx-auto py-5">
@@ -91,6 +91,94 @@ color: #ffa600;
         </a>
     </div>
 </section>
+
+<section class="mbr-section" id="witsec-modal-window-block-35" data-rv-view="36">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="congrats" tabindex="-1" role="dialog" aria-labelledby="congratsLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="congrats_body"><h1>Congratulations</h1>
+<br>
+Your user account has been created and you can now login to watch and add movies
+<br>&nbsp;
+<p>
+Click anywhere to get started!</p></div>    </div>  </div></div><script type="text/plain"> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#congrats").on("hidden.bs.modal", function () { 
+      var html = $( "#congrats_body" ).html(); 
+      $( "#congrats_body" ).empty(); 
+      $( "#congrats_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#congrats") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script type="text/plain">
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section><script type="text/plain">
+document.addEventListener("DOMContentLoaded", function() {
+  if (modalGetCookie("congrats_viewed") == "") {
+    setTimeout( function() {
+      if (document.cookie)
+        modalSetCookie("congrats_viewed", true, 3600);
+      OpenModal("congrats");
+    } , 2000);
+  }
+});
+</script>
 
 <section data-bs-version="5.1" class="header3 cid-Nkzl6tqCwg mbr-fullscreen mbr-parallax-background" id="mobile-apps">
 

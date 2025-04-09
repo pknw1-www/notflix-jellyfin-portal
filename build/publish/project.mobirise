@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "QRCode",
-    "currentPage": "index.html",
+    "currentPage": "onboarding.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -46,7 +46,7 @@
         "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 112,
+    "uniqCompNum": 114,
     "versionPublish": "5.9.25",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -11042,7 +11042,7 @@
               "text-align": "left"
             }
           },
-          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n \n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"range\" inline title=\"Text Width\" name=\"text_width\" min=\"0\" max=\"100\" step=\"1\" value=\"90\" condition=\"showText == true\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Media On Left/Right\" name=\"reverseContent\">\n \n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-22-at-21.52.46-1800x1033.png\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n \n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"media-container-row d-flex align-items-center\">\n            <div class=\"mbr-white col-12 col-lg-6 text-center text-lg-left py-5\">\n                <h1 class=\"mbr-section-title pb-2 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Congratulations!</b></h1>\n                <p class=\"mbr-text pb-4 mbr-fonts-style wrapper\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Your account has been created - and you can now login...<br><br> so what next?</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-danger-outline\" href=\"https://jellyfin.pknw1.co.uk\" data-app-placeholder=\"Type Text\" target=\"_blank\">Web</a> <a class=\"btn btn-md btn-danger-outline\" href=\"onboarding.html#mobile-apps\" data-app-placeholder=\"Type Text\">Apps</a> <a class=\"btn btn-md btn-danger-outline\" href=\"onboarding.html#requests\" data-app-placeholder=\"Type Text\">Request</a></div>\n            </div>\n            <div class=\"col-8 col-lg-5 mx-auto py-5\">\n                <a href=\"https://jellyfin.pknw1.co.uk\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/notflix-jellyfin-1256x573.png\" class=\"img-fluid\" alt title></a>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <span mbr-icon class=\"fa-chevron-down fa\"></span>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n \n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"range\" inline title=\"Text Width\" name=\"text_width\" min=\"0\" max=\"100\" step=\"1\" value=\"90\" condition=\"showText == true\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Media On Left/Right\" name=\"reverseContent\">\n \n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-22-at-21.52.46-1800x1033.png\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n \n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"media-container-row d-flex align-items-center\">\n            <div class=\"mbr-white col-12 col-lg-6 text-center text-lg-left py-5\">\n                <h1 class=\"mbr-section-title pb-2 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>User Created!</b></h1>\n                <p class=\"mbr-text pb-4 mbr-fonts-style wrapper\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">To get started, you can jump straight to the Web platform, or explore further and download desktop clients, iOS and Android Apps<br><br> Remember to update your user profile in Jellyfin and Requests;<br><br>If you install mobile apps, you can optionally get live updates for new uploads</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-danger-outline\" href=\"https://jellyfin.pknw1.co.uk\" data-app-placeholder=\"Type Text\" target=\"_blank\">Web</a> <a class=\"btn btn-md btn-danger-outline\" href=\"onboarding.html#mobile-apps\" data-app-placeholder=\"Type Text\">Apps</a> <a class=\"btn btn-md btn-danger-outline\" href=\"onboarding.html#requests\" data-app-placeholder=\"Type Text\">Request</a></div>\n            </div>\n            <div class=\"col-8 col-lg-5 mx-auto py-5\">\n                <a href=\"https://jellyfin.pknw1.co.uk\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/notflix-jellyfin-1256x573.png\" class=\"img-fluid\" alt title></a>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <span mbr-icon class=\"fa-chevron-down fa\"></span>\n        </a>\n    </div>\n</section>",
           "_JSplaceholders": [],
           "_PHPplaceholders": [],
           "_anchor": "success",
@@ -11052,6 +11052,39 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "modalName": "congrats",
+            "modalSize": "medium",
+            "modalHeader": false,
+            "modalTitle": "Modal title",
+            "modalBody": "<h1>Congratulations</h1>\n<br>\nYour user account has been created and you can now login to watch and add movies\n<br>&nbsp;\n<p>\nClick anywhere to get started!</p>",
+            "modalBodyHTML": true,
+            "modalFooter": false,
+            "modalCloseBtn": true,
+            "modalCloseText": "Close",
+            "modalLink": false,
+            "modalLinkUrl": "https://mobirise.com/",
+            "modalLinkText": "Visit Mobirise",
+            "modalLinkNewWindow": true,
+            "modalVerticalCenter": true,
+            "modalFade": true,
+            "modalAutoOpen": true,
+            "modalAutoOpenOnce": true,
+            "modalAutoOpenGDPR": true,
+            "modalAutoOpenDelay": "2"
+          },
+          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#congrats\" data-bs-toggle=\"modal\" data-bs-target=\"#congrats\">Preview congrats</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#congrats-howtouse\" data-bs-toggle=\"modal\" data-bs-target=\"#congrats-howtouse\">How to use congrats</a>\n</div>\n<div class=\"modal fade\" id=\"congrats-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"congrats-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title display-7\" id=\"congrats-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body display-7\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('congrats')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "modalBody": "<h1>Congratulations</h1>\n<br>\nYour user account has been created and you can now login to watch and add movies\n<br>&nbsp;\n<p>\nClick anywhere to get started!</p>",
+          "alias": "witsec-modal-window",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-modal-window-block",
+          "_sourceTheme": "startm5",
+          "_anchor": "witsec-modal-window-block-35",
+          "modalWindow": "<div class=\"modal fade\" id=\"congrats\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"congratsLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  modal-dialog-centered\" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-body display-7\" id=\"congrats_body\"><h1>Congratulations</h1>\n<br>\nYour user account has been created and you can now login to watch and add movies\n<br>&nbsp;\n<p>\nClick anywhere to get started!</p></div>    </div>  </div></div><script> \ndocument.addEventListener(\"DOMContentLoaded\", function() { \n  if(typeof jQuery === \"function\") {\n    $(\"#congrats\").on(\"hidden.bs.modal\", function () { \n      var html = $( \"#congrats_body\" ).html(); \n      $( \"#congrats_body\" ).empty(); \n      $( \"#congrats_body\" ).append(html); \n    }) \n  } else { \n      var mdw = document.getElementById(\"#congrats\") \n      mdw.addEventListener(\"hidden.bs.modal\", function(event) { \n        mdw.innerHTML = mdw.innerHTML; \n      }); \n  } \n}); \n</script>"
         },
         {
           "alias": false,
