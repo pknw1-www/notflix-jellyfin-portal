@@ -8127,7 +8127,7 @@ a {
   display: flex;
   padding-top: 24rem;
   padding-bottom: 12rem;
-  background-image: url("../../../assets/images/pkqr-1920x1080.png");
+  background-image: url("../../../assets/images/jellyfin-bg-2000x1125.png");
 }
 .cid-uH57yq6Qd7 .mbr-overlay {
   background-color: #000000;
@@ -9036,6 +9036,46 @@ a {
   .cid-uHBtJGZhBw .image-wrapper {
     margin-bottom: 1rem;
   }
+}
+.cid-uHToHEMIj3 {
+  background-image: url("../../../assets/images/screenshot-2025-03-22-at-21.52.46-1800x1033.png");
+}
+.cid-uHToHEMIj3 .wrapper {
+  width: 90%;
+}
+@media (max-width: 992px) {
+  .cid-uHToHEMIj3 .wrapper {
+    width: 100% !important;
+  }
+}
+@media (min-width: 992px) {
+  .cid-uHToHEMIj3 .btn {
+    margin-left: 0 !important;
+  }
+}
+.cid-uHToHEMIj3 .mbr-fonts-style {
+  font-weight: 300;
+}
+.cid-uHToHEMIj3 .mbr-arrow {
+  background-color: transparent !important;
+}
+.cid-uHToHEMIj3 .fa {
+  position: absolute;
+  left: 23px !important;
+  top: 8px !important;
+  font-size: 18px;
+}
+.cid-uHToHEMIj3 .btn {
+  padding: 1rem 2rem;
+  font-weight: 300;
+}
+.cid-uHToHEMIj3 H1 {
+  text-align: left;
+  color: #ff0000;
+}
+.cid-uHToHEMIj3 .mbr-text,
+.cid-uHToHEMIj3 .mbr-section-btn {
+  text-align: left;
 }
 .cid-Nkzl6tqCwg {
   background-image: url("../../../assets/images/screenshot-2025-03-22-at-21.52.46-1800x1033.png");
