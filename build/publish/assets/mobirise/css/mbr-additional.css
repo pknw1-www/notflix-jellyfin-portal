@@ -7861,6 +7861,46 @@ a {
 .cid-Nkzl6tqCwg H1 {
   color: #ff0000;
 }
+.cid-uIam1vieax {
+  background-image: url("../../../assets/images/screenshot-2025-03-22-at-21.52.46-1800x1033.png");
+}
+.cid-uIam1vieax .wrapper {
+  width: 90%;
+}
+@media (max-width: 992px) {
+  .cid-uIam1vieax .wrapper {
+    width: 100% !important;
+  }
+}
+@media (min-width: 992px) {
+  .cid-uIam1vieax .btn {
+    margin-left: 0 !important;
+  }
+}
+.cid-uIam1vieax .mbr-fonts-style {
+  font-weight: 300;
+}
+.cid-uIam1vieax .mbr-arrow {
+  background-color: transparent !important;
+}
+.cid-uIam1vieax .fa {
+  position: absolute;
+  left: 23px !important;
+  top: 8px !important;
+  font-size: 18px;
+}
+.cid-uIam1vieax .btn {
+  padding: 1rem 2rem;
+  font-weight: 300;
+}
+.cid-uIam1vieax H1 {
+  text-align: left;
+  color: #ff0000;
+}
+.cid-uIam1vieax .mbr-text,
+.cid-uIam1vieax .mbr-section-btn {
+  text-align: left;
+}
 .cid-WHUakQ2nVZ {
   background-image: url("../../../assets/images/screenshot-2025-03-22-at-21.52.46-1800x1033.png");
 }
@@ -7900,6 +7940,97 @@ a {
 .cid-WHUakQ2nVZ .mbr-text,
 .cid-WHUakQ2nVZ .mbr-section-btn {
   text-align: left;
+}
+.cid-uIan4Q4S1N {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/gb-en-20250324-trifecta-perspective-ab8187c8-4ac6-4fbf-bbb7-8c119853ba14-large-2000x1125.jpg");
+}
+.cid-uIan4Q4S1N .mbr-iconfont {
+  font-size: 1.2rem !important;
+  font-family: 'Moririse2' !important;
+  color: white;
+  transition: all 0.3s;
+  transform: rotate(180deg);
+  padding-left: 0.5rem;
+}
+.cid-uIan4Q4S1N .panel-group {
+  border: none;
+}
+.cid-uIan4Q4S1N .card-header {
+  padding: 0rem;
+}
+@media (max-width: 767px) {
+  .cid-uIan4Q4S1N .card-header {
+    padding: 0rem;
+  }
+}
+.cid-uIan4Q4S1N .panel-body {
+  padding: 0rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.cid-uIan4Q4S1N .img-col {
+  padding: 0;
+}
+.cid-uIan4Q4S1N .img-item {
+  height: 100%;
+}
+.cid-uIan4Q4S1N img {
+  height: 100%;
+  object-fit: cover;
+}
+.cid-uIan4Q4S1N .collapsed span {
+  transform: rotate(0deg);
+}
+.cid-uIan4Q4S1N .panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cid-uIan4Q4S1N p {
+  margin-bottom: 0.3rem;
+}
+.cid-uIan4Q4S1N .panel-title-edit {
+  color: #000000;
+}
+.cid-uIan4Q4S1N .card .card-header {
+  background-color: transparent;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 2rem;
+}
+.cid-uIan4Q4S1N .card {
+  background: #232323;
+  padding: 2.25rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .cid-uIan4Q4S1N .card {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-uIan4Q4S1N .card {
+    margin-bottom: 1rem;
+    padding: 2rem 1.5rem;
+  }
+}
+.cid-uIan4Q4S1N .panel-text {
+  color: #ffffff;
+}
+.cid-uIan4Q4S1N .mbr-section-title {
+  text-align: center;
+  color: #000000;
+}
+.cid-uIan4Q4S1N .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-uIan4Q4S1N .panel-title-edit,
+.cid-uIan4Q4S1N .mbr-iconfont {
+  color: #ff0000;
 }
 .cid-uHYSvHqBcU {
   padding-top: 10rem;
