@@ -10,7 +10,7 @@
   <meta name="description" content="">
   
   
-  <title>Invite</title>
+  <title>Request Access</title>
   <link rel="stylesheet" data-href="assets/web/assets/mobirise-icons2/mobirise2.css">
 <link rel="stylesheet" data-href="assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" data-href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -21,7 +21,7 @@
 <link rel="stylesheet" data-href="assets/theme/css/style.css">
 <link rel="preload" data-href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" data-href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" data-href="assets/mobirise/css/mbr-additional.css?v=Km3ruZ"><link rel="stylesheet" data-href="assets/mobirise/css/mbr-additional.css?v=Km3ruZ" type="text/css">
+  <link rel="preload" as="style" data-href="assets/mobirise/css/mbr-additional.css?v=QkB1IE"><link rel="stylesheet" data-href="assets/mobirise/css/mbr-additional.css?v=QkB1IE" type="text/css">
 
   
   <style>.modal-content {
@@ -44,7 +44,7 @@ color: red;
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu1 cid-uH52IpCW47" once="menu" id="menu01-2k">
+  <section data-bs-version="5.1" class="menu menu1 cid-uIaNxwFPpq" once="menu" id="menu01-3d">
 	
 
 	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -85,22 +85,161 @@ color: red;
 	</nav>
 </section>
 
-<section data-bs-version="5.1" class="header16 cid-uGBCMkgMJ8 mbr-fullscreen mbr-parallax-background" id="header17-20">
+<section class="mbr-section" id="witsec-modal-window-block-3e" data-rv-view="266">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="Popup" tabindex="-1" role="dialog" aria-labelledby="PopupLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="Popup_body"><img data-src="https://www.pknw1.co.uk/assets/images/logo-stacked-511x282.png" width="50%"><br>
+go to the<a href="https://app.plex.tv/desktop"> Plex Web App</a>  or <a href="https://requests.pknw1.co.uk">requests</a><br>
+
+<strong>username : pkmovies2 </strong> <br>
+<strong>password : pknw1plex </strong> <br>
+<br>
+currently 1865 movies &amp; 4623 TV Episodes
+<br><p>
+Plex will open in 20 seconds</p></div>    </div>  </div></div><script type="text/plain"> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#Popup").on("hidden.bs.modal", function () { 
+      var html = $( "#Popup_body" ).html(); 
+      $( "#Popup_body" ).empty(); 
+      $( "#Popup_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#Popup") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script type="text/plain">
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+
+
+<section data-bs-version="5.1" class="header16 cid-uIaNxxe6iM mbr-fullscreen mbr-parallax-background" id="header17-3g">
   
-  <div class="mbr-overlay" style="opacity: 0.1; background-color: rgb(0, 0, 0);"></div>
+  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
   <div class="container-fluid">
     <div class="row">
-      <div class="content-wrap col-12 col-md-12">
-        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1"><strong>Invite</strong></h1>
+      <div class="content-wrap col-12 col-md-6">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-5">
+          <strong><br>Request an invite</strong></h1>
         
-        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Enter your details and then follow the on-boarding guide<br>- you can login without confirming the signup email<br>- the same account works for <a href="https://jellyfin.pknw1.co.uk" class="text-primary" target="_blank">Watching</a> and <a href="https://requests.pknw1.co.uk" class="text-primary" target="_blank">Requests</a><br>- follow the on-boarding steps to setup devices<br>- check your App Store (tv/mobile/console) for <a href="https://jellyfin.org/downloads" class="text-primary" target="_blank">Jellyfin</a><br><br><strong>- if you need help, <a href="contact.html#header17-16" class="text-primary" style="">ping a message</a></strong><br><br><strong>remember - I will never ask for payment or more personal info!<br>do not use apps that have "in-app purchase"<br>do not enter any other details other than username/password!</strong></p>
-        <div class="mbr-section-btn"><a class="btn btn-white-outline display-7" href="https://my.pknw1.co.uk/invite/eFwDsgZzQMAKY3iXhqenDh">Open Signup Page</a></div>
+        
+        <div class="mbr-section-btn">
+        
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="modal-body display-7" id="help_body">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="inputText" id="inputText" placeholder="Your name" data-form-field="name" class="form-control" value="">
+                        </div>
+                        
+                        <div class="col-12 form-group mb-3" data-for="phone">
+                            <input type="tel" name="phone" id="inputNumber" placeholder="User and Platform to reply" data-form-field="phone" class="form-control" value="">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" id="inputMessage" placeholder="Include as much detail about your query" data-form-field="textarea" class="form-control"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button id="publishButton" type="submit" class="btn btn-danger display-7 animate__animated animate__delay-1s animate__fadeIn">Send!</button><p id="result"></p></div>
+                        </div>
+
+                    </div>
+        
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section data-bs-version="5.1" class="footer3 cid-uHYSvHqBcU mbr-parallax-background" once="footers" id="footer03-39">
+<section data-bs-version="5.1" class="start article05 cid-uIaNxxs4Bk mbr-parallax-background" id="article05-3h">
+  
+
+  
+  <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(35, 35, 35);"></div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12">
+        <div class="card-wrapper">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-4 image-wrapper">
+              <img class="w-100" data-src="assets/images/waa.png" alt="Mobirise Website Builder">
+            </div>
+            <div class="col-12 col-lg col-md-12">
+              <div class="text-wrapper align-left">
+                <h1 class="mbr-section-title mbr-fonts-style mb-4 display-5">
+                  <strong>Watch out for a reply.....</strong></h1>
+                <p class="mbr-text mbr-fonts-style mb-4 display-7">I will reply normally within an hour or so.... or check<br><br><a href="https://ntfy.sh/pknw1plex-contact" class="text-primary" target="_blank">https://ntfy.sh/pknw1plex-contact</a><br><a href="https://ntfy.sh/pknw1" class="text-primary" target="_blank">https://ntfy.sh/pknw1</a><br></p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="footer3 cid-uIaNxxD9yl mbr-parallax-background" once="footers" id="footer03-3i">
 
         
 
