@@ -7703,76 +7703,6 @@ a {
     padding: 1rem;
   }
 }
-.cid-uHBtJGZhBw {
-  background-image: url("../../../assets/images/bg-dimmed-2000x1125.png");
-}
-.cid-uHBtJGZhBw .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uHBtJGZhBw .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uHBtJGZhBw .row {
-  flex-direction: row-reverse;
-}
-.cid-uHBtJGZhBw .mbr-description {
-  text-align: left;
-}
-.cid-uHBtJGZhBw .item-wrapper {
-  background: #232323;
-  margin-bottom: 2rem;
-  padding: 2.25rem;
-}
-@media (max-width: 767px) {
-  .cid-uHBtJGZhBw .item-wrapper {
-    padding: 2rem 1.5rem;
-    margin-bottom: 1rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .cid-uHBtJGZhBw .item-wrapper {
-    padding: 2rem 1.5rem;
-    margin-bottom: 2rem;
-  }
-}
-.cid-uHBtJGZhBw .card-title,
-.cid-uHBtJGZhBw .iconfont-wrapper {
-  color: #000000;
-}
-.cid-uHBtJGZhBw .card-text {
-  color: #000000;
-}
-.cid-uHBtJGZhBw .mbr-section-title {
-  color: #ff0000;
-  text-align: center;
-}
-.cid-uHBtJGZhBw .mbr-number {
-  color: #ff0000;
-}
-.cid-uHBtJGZhBw .mbr-text,
-.cid-uHBtJGZhBw .mbr-section-btn {
-  text-align: center;
-  color: #ffffff;
-}
-.cid-uHBtJGZhBw .card-text,
-.cid-uHBtJGZhBw .item .mbr-section-btn {
-  text-align: left;
-  color: #ffffff;
-}
-.cid-uHBtJGZhBw .image-wrapper {
-  margin-bottom: 2rem;
-}
-@media (max-width: 767px) {
-  .cid-uHBtJGZhBw .image-wrapper {
-    margin-bottom: 1rem;
-  }
-}
 .cid-uHToHEMIj3 {
   background-image: url("../../../assets/images/screenshot-2025-03-22-at-21.52.46-1800x1033.png");
 }
@@ -7899,6 +7829,9 @@ a {
 }
 .cid-uIam1vieax .mbr-text,
 .cid-uIam1vieax .mbr-section-btn {
+  text-align: left;
+}
+.cid-uIam1vieax P {
   text-align: left;
 }
 .cid-WHUakQ2nVZ {
@@ -8031,6 +7964,9 @@ a {
 .cid-uIan4Q4S1N .panel-title-edit,
 .cid-uIan4Q4S1N .mbr-iconfont {
   color: #ff0000;
+}
+.cid-uIan4Q4S1N P {
+  color: #ffffff;
 }
 .cid-uHYSvHqBcU {
   padding-top: 10rem;
