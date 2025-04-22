@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "QRCode",
-    "currentPage": "updates.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -60,25 +60,11 @@
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
-    "cookiesAlert": {
-      "customDialogSelector": false,
-      "colorText": "#ffffff",
-      "colorBg": "#232323",
-      "colorButton": "#ff0000",
-      "rejectColor": "#ffffff",
-      "colorLink": "#424a4d",
-      "underlineLink": true,
-      "opacityOverlay": "100",
-      "bgOpacity": "100",
-      "text": "By Clicking Accept, you acknowledge that you are within the EU and have permission from the Administrators - any breach will be considered in violation of the Computer Misuses Act (1990) \n<br>\nif you are accessing this service for any other reasons other than to evaluate the technology demonstration for education purposes, you agree to relinquish any claim, request  or legal standing over the system above and beyond legal rights to request cessation of services or regional availability ",
-      "textButton": "ACCEPT",
-      "rejectText": "REJECT"
-    },
     "publishChangesOnly": true,
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
     "witsec-white-label": true,
-    "cookiesAlertType": "3",
-    "gdpr": false
+    "gdpr": false,
+    "cookiesAlert": false
   },
   "pages": {
     "index.html": {
@@ -932,7 +918,7 @@
             "modalLinkNewWindow": true,
             "modalVerticalCenter": true,
             "modalFade": true,
-            "modalAutoOpen": true,
+            "modalAutoOpen": false,
             "modalAutoOpenOnce": false,
             "modalAutoOpenGDPR": true,
             "modalAutoOpenDelay": "2"
