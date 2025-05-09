@@ -20,7 +20,7 @@ body {
   font-family: Inter Tight;
 }
 .display-1 {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'XBAND Rough';
   font-size: 4.8rem;
   line-height: 1;
 }
@@ -28,7 +28,7 @@ body {
   font-size: 6rem;
 }
 .display-2 {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'XBAND Rough';
   font-size: 4rem;
   line-height: 1;
 }
@@ -36,7 +36,7 @@ body {
   font-size: 5rem;
 }
 .display-4 {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'XBAND Rough';
   font-size: 1.4rem;
   line-height: 1.5;
 }
@@ -44,7 +44,7 @@ body {
   font-size: 1.75rem;
 }
 .display-5 {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'XBAND Rough';
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -52,7 +52,7 @@ body {
   font-size: 2.5rem;
 }
 .display-7 {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'XBAND Rough';
   font-size: 1.4rem;
   line-height: 1.3;
 }
@@ -632,7 +632,7 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'XBAND Rough';
   font-size: 1.4rem;
   line-height: 1.3;
   font-weight: 400;
@@ -646,7 +646,7 @@ a:hover {
   border-color: #ff0000 !important;
 }
 .form-control:-webkit-input-placeholder {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'XBAND Rough';
   font-size: 1.4rem;
   line-height: 1.3;
   font-weight: 400;
@@ -5417,6 +5417,51 @@ a {
   text-align: right;
 }
 .cid-uGBCMkgMJ8 .mbr-section-subtitle {
+  text-align: right;
+}
+.cid-uJRRkDJxOT {
+  background-image: url("../../../assets/images/jellyfin-bg-1-2000x1125.png");
+}
+.cid-uJRRkDJxOT .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uJRRkDJxOT .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 991px) {
+  .cid-uJRRkDJxOT .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uJRRkDJxOT .row {
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .cid-uJRRkDJxOT .image-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-uJRRkDJxOT .text-wrapper {
+    padding: 0 2rem;
+  }
+}
+.cid-uJRRkDJxOT .mbr-section-title {
+  color: #ffffff;
+  text-align: right;
+}
+.cid-uJRRkDJxOT .mbr-text,
+.cid-uJRRkDJxOT .mbr-section-btn {
+  color: #ffffff;
+  text-align: right;
+}
+.cid-uJRRkDJxOT .mbr-section-title DIV {
   text-align: right;
 }
 .cid-uHYSvHqBcU {
