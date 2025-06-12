@@ -10,7 +10,7 @@
   <meta name="description" content="">
   
   
-  <title>Request Access</title>
+  <title>create-account</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link href="assets/fonts/style.css" rel="stylesheet">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=aL2R57"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=aL2R57" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=OSdSw4"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=OSdSw4" type="text/css">
 
   
   <style>.modal-content {
@@ -44,7 +44,7 @@ color: red;
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu1 cid-uIaNxwFPpq" once="menu" id="menu01-3d">
+  <section data-bs-version="5.1" class="menu menu1 cid-uNWWN04EZT" once="menu" id="menu01-4m">
 	
 
 	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -87,7 +87,7 @@ color: red;
 	</nav>
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-3e" data-rv-view="1738">
+<section class="mbr-section" id="witsec-modal-window-block-4n" data-rv-view="1777">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -168,20 +168,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </section>
 
+<section data-bs-version="5.1" class="header16 cid-uNWWN0tgQ2 mbr-parallax-background" id="header17-4o">
+  
+  <div class="mbr-overlay" style="opacity: 0.1; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1"><strong>Contact</strong></h1>
+        <h2 class="mbr-section-subtitle mbr-fonts-style mbr-white mb-4 display-2"></h2>
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Send messages below - or interact directly on ntfy.sh/pknw1</p>
+        <div class="mbr-section-btn"><a class="btn btn-primary display-7" href="contact.html#Contact">Contact Form</a></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-<section data-bs-version="5.1" class="header16 cid-uIaNxxe6iM mbr-fullscreen mbr-parallax-background" id="header17-3g">
+<section data-bs-version="5.1" class="header16 cid-uNWWN0Lzre mbr-fullscreen mbr-parallax-background" id="header17-4p">
   
   <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
   <div class="container-fluid">
     <div class="row">
       <div class="content-wrap col-12 col-md-6">
         <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-5">
-          <strong><br>Request an invite</strong></h1>
+          <strong><br>Get in touch...</strong></h1>
         
         
         <div class="mbr-section-btn">
-        
+                            <form action="https://webhook.pknw1.co.uk/adduser" name="Form Name" method="POST" class="" data-verified="pknw1@mailinator.com">
+
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -191,20 +205,22 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="dragArea row">
                         <div class="modal-body display-7" id="help_body">
                         <div class="col-md col-sm-12 form-group mb-3" data-for="name">
-                            <input type="text" name="inputText" id="inputText" placeholder="Your name" data-form-field="name" class="form-control" value="">
+                            <input type="text" name="username" id="username" placeholder="Username" data-form-field="name" class="form-control" value="">
                         </div>
                         
                         <div class="col-12 form-group mb-3" data-for="phone">
-                            <input type="tel" name="phone" id="inputNumber" placeholder="User and Platform to reply" data-form-field="phone" class="form-control" value="">
+                            <input type="email" name="email" id="email" placeholder="User and Platform to reply" data-form-field="phone" class="form-control" value="">
                         </div>
-                        <div class="col-12 form-group mb-3" data-for="textarea">
-                            <textarea name="textarea" id="inputMessage" placeholder="Include as much detail about your query" data-form-field="textarea" class="form-control"></textarea>
+                        <div class="col-12 form-group mb-3" data-for="phone">
+                            <input type="password" name="password" id="password" placeholder="User and Platform to reply" data-form-field="phone" class="form-control" value="">
+                        </div>                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <input name="code" id="code" placeholder="pacijqTKFLPRGCW6ctKTgk" value="pacijqTKFLPRGCW6ctKTgk" disabled="" data-form-field="textarea" class="form-control">
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
                             <button id="publishButton" type="submit" class="btn btn-danger display-7 animate__animated animate__delay-1s animate__fadeIn">Send!</button><p id="result"></p></div>
                         </div>
-
-                    </div>
+                      
+                    </div></form>
         
         </div>
       </div>
@@ -212,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 </section>
 
-<section data-bs-version="5.1" class="start article05 cid-uIaNxxs4Bk mbr-parallax-background" id="article05-3h">
+<section data-bs-version="5.1" class="start article05 cid-uNWWN12pmy mbr-parallax-background" id="article05-4q">
   
 
   
